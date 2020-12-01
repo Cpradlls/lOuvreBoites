@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="ml3">L'Ouvre-Boites</h1>
+        <img id="des" src="dice.svg" alt="Dés">
+    </header>
+    <form id="accueil" action="choix.php" method="POST">
+
+        <label for="choixDes">Nombre de dés à lancer:</label>
+        <select name="choixDes" id="choixDes" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </br>
+        <label for="choixFaces">Nombre de faces du dés :</label>
+        <select name="choixFaces" id="choixFaces" required>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+        </select>
+    </br>
+        <input class="button" type="submit" value="Lancer">
+    </form>
+</body>
+</html>
